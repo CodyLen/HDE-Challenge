@@ -13,7 +13,7 @@ func cal_square(x int) int{
 }
 
 /*sum up the single case. Due to the requirements of the test, the recursive method is applied*/
-func single_case(x int){
+func single_case(x int) int{
     var num,sum int;
     fmt.Scanf("%d", &num)
     if (x > 0) {
