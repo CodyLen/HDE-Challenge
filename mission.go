@@ -4,10 +4,12 @@ import "fmt"
 /*function for calculating sqaure*/
 func cal_square(x int) int{
 var sqr int
-if x>=0 {
-sqr = x*x
+if x >= 0 {
+     sqr = x*x
 }
-else sqr=0
+else {
+     sqr=0
+        }
 }
 return sqr
 }
@@ -16,11 +18,8 @@ return sqr
 func single_case(x int){
 var num,sum int
 fmt.Scanf("%d", &num)
-if x>0 {
+if x != 0 {
    sum = cal_square(num) + single_case(x-1)
-}
-else {
-   sum = 0
 }
 return sum
 }
