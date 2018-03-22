@@ -29,10 +29,12 @@ func single_case_sum(x int) int{
 
 /*display the result of each case*/
 func cases(x int){
-    var amount int;
-    fmt.Scanf("%d", &amount);
+    //var amount int;
+    //fmt.Scanf("%d", &amount);
     //fmt.Printf(strconv.Itoa(single_case_sum(amount)));
     if (x > 0) {
+        var amount int;
+        fmt.Scanf("%d", &amount);
         fmt.Printf(strconv.Itoa(single_case_sum(amount)));
         cases(x-1);
     } 
