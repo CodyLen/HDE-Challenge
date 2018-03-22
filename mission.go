@@ -9,7 +9,6 @@ func cal_square(x int) int{
     } else {
          sqr=0
     }
-    }
     return sqr
 }
 
