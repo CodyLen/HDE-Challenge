@@ -35,11 +35,11 @@ func show_case(){
 }
 
 func cases(x int){
-    show_case()
-    if (x>0) {   
+    while (x>0) {   
+        show_case();
         cases(x-1);
     } 
-
+    //cases(x-1);
 }
 
 /*execution*/
