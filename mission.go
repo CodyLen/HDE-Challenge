@@ -16,13 +16,13 @@ func cal_square(x int) int{
 }
 
 /*sum up the single case. Due to the requirements of the test, the recursive method is applied*/
-func single_case(x int) int{
+func single_case_sum(x int) int{
     var num,sum int;
     fmt.Scanf("%d", &num)
     if (x > 0) {
-        sum = cal_square(num) + single_case(x-1);
+        sum = cal_square(num) + single_case_sum(x-1);
     } else {   
-          sum = 0;      
+        sum = 0;      
     }
     return sum;
 }
@@ -31,11 +31,10 @@ func single_case(x int) int{
 func cases(x int){
     var amount int;
     fmt.Scanf("%d", &amount);
+    fmt.Printf(strconv.Itoa(single_case_sum(amount)));
     if (x > 0) {
-        fmt.Printf(strconv.Itoa(single_case(amount)));
         cases(x-1);
-    }
-    return 0;
+    } 
 }
 
 /*execution*/
