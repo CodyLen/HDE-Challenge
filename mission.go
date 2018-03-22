@@ -20,11 +20,11 @@ func single_case_sum(x int) int{
     var num,sum int;
     fmt.Scanf("%d", &num)
     if (x > 0) {
-        return cal_square(num);
+        sum = cal_square(num) + single_case_sum(x-1);
     } else {   
-        return 1;      
+        sum = 0;      
     }
-    return sum + single_case_sum(x-1);
+    return sum;
 }
 
 /*display the result of each case*/
