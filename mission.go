@@ -28,13 +28,18 @@ func single_case_sum(x int) int{
 }
 
 /*display the result of each case*/
-func cases(x int){
+func show_case(){
     var amount int;
     fmt.Scanf("%d", &amount);
     fmt.Printf(strconv.Itoa(single_case_sum(amount)));
-    if (x > 0) {
+}
+
+func cases(x int){
+    show_case()
+    if (x>0) {   
         cases(x-1);
     } 
+
 }
 
 /*execution*/
