@@ -12,7 +12,7 @@ else sqr=0
 return sqr
 }
 
-/*sum up the single case*/
+/*sum up the single case. Due to the requirements of the test, the recursive method is applied*/
 func single_case(x int){
 var num,sum int
 fmt.Scanf("%d", &num)
