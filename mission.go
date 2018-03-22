@@ -1,5 +1,8 @@
 package main
-import "fmt"
+import (
+    "fmt"
+    "strconv"   
+)
 
 /*function for calculating sqaure*/
 func cal_square(x int) int{
@@ -29,7 +32,7 @@ func cases(x int){
     var amount int;
     fmt.Scanf("%d", &amount);
     if (x > 0) {
-        fmt.Printf(single_case(amount));
+        fmt.Printf(strconv.Itoa(single_case(amount)));
         cases(x-1);
     }
     return 0;
