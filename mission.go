@@ -35,7 +35,7 @@ func cases(x int){
     if (x > 0) {
         var amount int;
         fmt.Scanf("%d", &amount);
-        fmt.Printf(strconv.Itoa(single_case_sum(amount)));
+        fmt.Printf(strconv.Itoa(single_case_sum(amount-1)));
         cases(x-1);
     } 
 }
