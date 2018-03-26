@@ -18,11 +18,12 @@ func cal_square(x int) int{
 /*sum up the single case. Due to the requirements of the test, the recursive method is applied*/
 func single_case_sum(x int) int{
     var num,sum int;
-    fmt.Scanf("%d", &num)
+    //fmt.Scanf("%d", &num)
     if (x > 0) {
+        fmt.Scanf("%d", &num);
         sum = cal_square(num) + single_case_sum(x-1);
     } else {   
-        num = 0;      
+        sum = 0;      
     }
     return sum;
 }
