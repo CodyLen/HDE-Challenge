@@ -1,7 +1,7 @@
 package main
 import (
     "fmt"
-    //"strconv"   
+    /*"strconv"*/   
 )
 
 /*function for calculating sqaure*/
