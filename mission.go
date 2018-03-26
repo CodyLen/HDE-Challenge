@@ -22,7 +22,7 @@ func single_case_sum(x int) int{
     if (x > 0) {
         sum = cal_square(num) + single_case_sum(x-1);
     } else {   
-        fmt.Printf("testing");      
+        num = 0;      
     }
     return sum;
 }
