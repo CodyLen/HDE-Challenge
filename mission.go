@@ -28,7 +28,7 @@ func single_case_sum(x int) int{
 
 /*display the result of each case*/
 func show_cases(x int){
-    var amount,result int;
+    var amount int;
     if(x>0) {
         fmt.Scanf("%d", &amount);
         //result = single_case_sum(amount);
