@@ -31,8 +31,7 @@ func show_cases(x int){
     var amount int;
     if(x>0) {
         fmt.Scanf("%d", &amount);
-        //result = single_case_sum(amount);
-        //fmt.Printf(strconv.Itoa(result));
+        /*fmt.Printf(strconv.Itoa(single_case_sum(amount)));*/
         show_cases(x-1);
     }    
 }
